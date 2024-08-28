@@ -1,4 +1,11 @@
- export let Cart = JSON.parse(localStorage.getItem('Cart'));
+ export let Cart;
+
+
+ loadFromStorage();
+
+
+ export function loadFromStorage(){
+  Cart = JSON.parse(localStorage.getItem('Cart'));
 
  if(!Cart){
   Cart = 
@@ -15,6 +22,7 @@
 
  ];
  }
+}
  
  function saveToStorage(){
   localStorage.setItem('Cart',JSON.stringify(Cart));
