@@ -2,10 +2,11 @@ class Cart {
     cartItems=undefined;
 
     constructor(){
+      this.#loadFromStorage();
 
     }
 
-    loadFromStorage() {
+    #loadFromStorage() {
         this.cartItems = JSON.parse(localStorage.getItem('Cart-oop'));
        
        if(!this.cartItems){
@@ -83,7 +84,7 @@ class Cart {
 
 }
 
-const cart= new Cart();
+const cart= new Cart('Cart-oop');
 console.log(Cart);
 
 console.log(cart instanceof Cart);
