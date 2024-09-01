@@ -6,6 +6,9 @@ import '../data/backend-practice.js';
 
 
 
+
+
+
 loadProducts(() =>{
     renderOrderSummary();
     renderPaymentSummary(); 
