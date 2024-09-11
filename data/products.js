@@ -134,8 +134,8 @@ object3.method();
     
     });
     console.log('load products');
-
     fun();
+
   });
 
 
